@@ -1,9 +1,5 @@
 const videos = [...document.querySelectorAll('li')];
 
-// videos.map((video) => {
-//   console.log(video, 'video');
-// });
-
 const totalTime = videos.reduce((total, current) => {
   const time = current.dataset.time;
   const [min, sec] = time.split(':').map(parseFloat);
